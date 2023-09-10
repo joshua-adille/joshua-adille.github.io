@@ -8,19 +8,22 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: black;
-    color:white;
+    background: rgb(179 223 220);
+    color:black;
 
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('images/ProfessionalPic.jpg');
+    background-image: url(/images/Pic-noBG.png);
     background-size: contain;
-    background-position: calc(90% - 20px) center;
+    background-position: right center;
     background-repeat: no-repeat;
-    
+
 }
+/* .background{
+} */
+
 .container{
     padding: 10px 10%;
 }
@@ -40,7 +43,7 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -49,7 +52,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(199, 38, 38);
+    background: rgb(8 76 65);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -61,20 +64,20 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 20%;
     font-size: 30px;
-
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: rgb(199, 38, 38);
+    color: rgb(8 76 65);
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~About Section~~~~~~~~~~~~~~~~~~~~~~ */
 
 #about{
     padding: 80px 0;
-    color: #ababab;
+    color: black;
 }
 .row{
     display: flex;
@@ -94,7 +97,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: black;
 }
 .tab-title{
     display: flex;
@@ -111,21 +114,21 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(199, 38, 38);
-    position: absolute;
+    background: rgb(8 76 65);
+    position:absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: rgb(216, 103, 103);
+    color: rgb(8 76 65);
     font-size: 14px;
 }
 .tab-contents{
@@ -143,6 +146,11 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    color: white;
+    filter: blur(0px);
+}
+.webDesign2, .webDesign3{
+    filter: blur(8px);
 }
 .services-list div{
     background: #262626;
@@ -169,7 +177,8 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff004f;
+    background: rgb(8 76 65);
+    filter: blur(0px);
     transform: translateY(-10px);
 }
 
@@ -184,12 +193,15 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .work{
+    max-width: 100%;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
+    height: 600px;
+    object-fit: contain;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -197,7 +209,8 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(8 76 65));
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -218,7 +231,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: rgb(8 76 65);
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -238,15 +251,16 @@ transform: scale(1.1);
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid rgb(8 76 65);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: rgb(8 76 65);
+    color: white;
 }
 /* ~~~~~~~~~~~~~~~Contact~~~~~~~~~~~~ */
 .contact-left{
@@ -259,28 +273,33 @@ transform: scale(1.1);
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: rgb(8 76 65);
     margin-right: 15px;
     font-size: 25px;
 }
 .social-icons{
     margin-top: 30px;
+    line-height: 5px;
 }
 .social-icons a{
     text-decoration: none;
+    text-align: center;
     font-size: 30px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
 }
+.social-icons a span{
+    font-size: 10px;
+}
 .social-icons a:hover{
-    color: #ff004f;
+    color: rgb(8 76 65);
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: rgb(17, 156, 133);
 }
 .contact-right form{
     width: 100%;
@@ -289,10 +308,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: white;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: black;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -304,8 +323,9 @@ form .btn2{
 }
 .copyright{
     width: 100%;
+    color: white;
     text-align: center;
-    padding: 25px 0;
+    padding: 10px 0;
     background: #262626;  
     font-weight: 300;
     margin-top: 20px;
@@ -319,7 +339,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url('images/ProfessionalPic.jpg');
+        background-image: url('images/Pic-noBG.png');
     }
     .header-text{
         margin-top: 100%;
@@ -334,7 +354,7 @@ nav .fa-solid{
         cursor: pointer;
     }
     nav ul{
-        background: #ff004f;
+        background: rgb(17, 156, 133);
         position: fixed;
         top: 0;
         right: -200px;

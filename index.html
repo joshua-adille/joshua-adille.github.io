@@ -9,22 +9,24 @@
 </head>
 <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src='images/logo.png' class="logo">
-                <ul id="sideMenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Computer Engineering Graduate</p>
-                <h1>Hi, I'm <span>Joshua Adille</span><br> from Philippines</h1>
+        <div class="background">
+            <div class="container">
+                <nav>
+                    <img src='images/Josh Logo Sure.png' class="logo">
+                    <ul id="sideMenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Engineering Graduate</p>
+                    <h1>Hi, I'm <span>Joshua Adille</span><br> from Philippines</h1>
+                </div>
             </div>
         </div>
     </div>
@@ -33,18 +35,17 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png">
+                    <img src="images/JoshPic.jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Error culpa tempora dolore, quaerat, consequuntur ea reprehenderit placeat 
-                        eum voluptas neque debitis voluptates id veritatis commodi? Recusandae 
-                        voluptatum vitae optio explicabo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Vitae rerum qui provident voluptates dignissimos voluptate pariatur adipisci odio eos 
-                        corporis, nostrum facere, tenetur obcaecati animi possimus deleniti. Ducimus, distinctio 
-                        reiciendis?
+                        I am generally curious about everything and love to tinker with anything that catches my
+                        attention, especially technology-related stuff. I also enjoy solving problems whether casual
+                        or work-related. I am also a quick learner and can understand and utilize concepts quickly. I
+                        am a very driven and hardworking person. Currently, I have a decent understanding of C++ and Python
+                        programming languages, recently learned HTML5, CSS3, and Javascript. Now I am focusing on learning
+                        frameworks such as React.
                     </p>
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -53,23 +54,21 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                            <li><span>UI?UX</span><br>Designing Web/App Interfaces using Adobe XD</li>
+                            <li><span>Web Development</span><br>Web Development utilizing HTML5, CSS3, and Javascript</li>
+                            <li><span>Embedded Systems</span><br>Building functional Embedded Systems</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET</li>
-                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
-                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coint Digital Ltd.</li>
+                            <li><span>June - July 2022</span><br>System Analyst Internship at Pixel8</li>
+                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-                            <li><span>2016</span><br>MBA from MIT Bangalore</li>
-                            <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                            <li><span>2019 - 2023</span><br>Bachelor of Science in Computer Engineering - Bicol University</li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -82,28 +81,25 @@
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
+            <div class="webDesign1">
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore suscipit ut 
-                    sequi tenetur pariatur natus delectus cumque corporis eius accusantium, 
-                    nesciunt, sint facere, soluta omnis ducimus in nostrum ex!</p>
+                <p>Currently I am offering simple Web Development services such as creating static Webpages,
+                    personal Webpages, and Website recreation. I also offer custom made Webpages that suits 
+                    the clients needs.
+                </p>
                 <a href="#">Learn More</a>
             </div>
-            <div>
+            <div class="webDesign2">
                 <i class="fa-solid fa-crop"></i>
-                <h2>UI/UX Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore suscipit ut 
-                    sequi tenetur pariatur natus delectus cumque corporis eius accusantium, 
-                    nesciunt, sint facere, soluta omnis ducimus in nostrum ex!</p>
+                <h2>Fullstack Web Development</h2>
+                <p>This service will soon be available!</p>
                 <a href="#">Learn More</a>
             </div>
-            <div>
+            <div class="webDesign3">
                 <i class="fa-brands fa-app-store-ios"></i>
-                <h2>App Design</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit inventore suscipit ut 
-                    sequi tenetur pariatur natus delectus cumque corporis eius accusantium, 
-                    nesciunt, sint facere, soluta omnis ducimus in nostrum ex!</p>
+                <h2>Mobile App Development</h2>
+                <p>This service will soon be available!</p>
                 <a href="#">Learn More</a>
             </div>
         </div>
@@ -115,32 +111,42 @@
         <h1 class="sub-title">Portfolio</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work-1.png">
+                <img src="images/Website pic.png">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse hic? Suscipit 
-                        debitis culpa, similique itaque deleniti expedita, commodi nisi dolores quis ea, 
-                        maxime vel ipsum fugiat excepturi in? Asperiores.</p>
+                    <h3>Personal Website</h3>
+                    <p>My personal website project is a digital portfolio and online presence that showcases my 
+                        professional achievements, skills, and interests. It serves as a central hub for potential 
+                        employers, clients, and visitors to learn more about me and my work.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/work-2.png">
+                <img src="images/iotRef.png">
                 <div class="layer">
-                    <h3>Music App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse hic? Suscipit 
-                        debitis culpa, similique itaque deleniti expedita, commodi nisi dolores quis ea, 
-                        maxime vel ipsum fugiat excepturi in? Asperiores.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>IoT Based Thermoelectric Cooler for Breastmilk Preservation</h3>
+                    <p>Our college thesis where we developed a IoT cooler capable of preserving breastmilk while on the go.
+                        It has additional features such as an LCD display for monitoring the temperature, functionality
+                        of heating the breastmilk into room temperature, and interacting with these functions through IoT.
+                    </p>
+                        <a><i class="fa-solid fa-circle-exclamation"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cert.png">
+                <div class="layer">
+                    <h3>2nd Runner-up C++ Programming Challenge</h3>
+                    <p>During the Reginal ICpEP Convention (Region 5) a programming challenge was held. I joined in the C++
+                        category and was able to place 3rd in the said event.
+                    </p>
+                        <a><i class="fa-solid fa-circle-exclamation"></i></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/work-3.png">
                 <div class="layer">
-                    <h3>Online SHop App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, esse hic? Suscipit 
-                        debitis culpa, similique itaque deleniti expedita, commodi nisi dolores quis ea, 
-                        maxime vel ipsum fugiat excepturi in? Asperiores.</p>
+                    <h3>Future Projects</h3>
+                    <p>My future projects consists of recreating this exact webpage using a front-end framework
+                        such as React and connecting it to a database such as MongoDB or MySQL.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -154,13 +160,13 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> 09123456789</p>
+                <p><i class="fa-solid fa-paper-plane"></i> joshua.adille14@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 09453622582</p>
                 <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
-                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/adillejoshua/"><i class="fa-brands fa-facebook"></i><br><span>Facebook</span></a>
+                    <a href="https://github.com/joshua-adille"><i class="fa-brands fa-github"></i><br><span>Github</span></a>
+                    <a href="https://adillejoshua.jobs180.com/"><i class="fa-solid fa-file"></i><br><span>Jobs180</span></a>
+                    <a href="https://www.linkedin.com/in/joshua-adille-7434ba280/"><i class="fa-brands fa-linkedin"></i><br><span>LinkedIn</span></a>
                 </div>
                 <a href="images/JoshuaCV.pdf" download class="btn btn2">Download CV </a>
             </div>
@@ -176,7 +182,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>Copyright <i class="fa-regular fa-copyright"></i> Joshua. Made with <span><i class="fa-solid fa-heart"></i></span> YT a Tutorial</p>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Developer <span><i class="fa-solid fa-terminal"></i></span>: Joshua V. Adille</p>
     </div>
 </div>
 
