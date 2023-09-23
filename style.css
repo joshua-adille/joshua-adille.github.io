@@ -10,7 +10,6 @@ html{
 body{
     background: rgb(179 223 220);
     color:black;
-
 }
 #header{
     width: 100%;
@@ -19,7 +18,6 @@ body{
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
-
 }
 .container{
     padding: 10px 10%;
@@ -145,7 +143,7 @@ nav ul li a:hover::after{
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~Services Section~~~~~~~~~~~~~~~~~~~~~~ */
 #services{
-    padding: 30px 0;
+    padding: 60px 0;
 }
 .services-list{
     display: grid;
@@ -190,7 +188,7 @@ nav ul li a:hover::after{
 
 /* ~~~~~~~~~~~~~~~~~~Portfolio Section~~~~~~~~~~~~~ */
 #portfolio{
-    padding: 50px 0;
+    padding: 60px 0;
 }
 .work-list{
     display: grid;
