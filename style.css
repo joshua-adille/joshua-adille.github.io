@@ -424,7 +424,7 @@ body{
 }
 .row-flex{
     display:flex;
-    gap:20px;
+    gap:32px;
     align-items:baseline;
 }
 .row-title{
