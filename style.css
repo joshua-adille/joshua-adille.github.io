@@ -19,6 +19,11 @@ body{
     background:rgba(52,216,172,0.28);
     color:#fff;
 }
+a:focus-visible,button:focus-visible{
+    outline:2px solid #34d8ac;
+    outline-offset:3px;
+    border-radius:4px;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~ Layout primitives ~~~~~~~~~~~~~~~~~~~~ */
 .page{
@@ -184,6 +189,27 @@ body{
     color:#34d8ac;
     margin:0 0 18px;
     letter-spacing:0.02em;
+}
+.hero-prompt .typed{
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    vertical-align:bottom;
+    letter-spacing:0;
+    width:26ch;
+    animation:typeCmd 1.4s steps(26,end) .2s backwards;
+}
+@keyframes typeCmd{
+    from{width:0;}
+}
+.type-caret{
+    display:inline-block;
+    width:8px;
+    height:15px;
+    margin-left:4px;
+    background:#34d8ac;
+    vertical-align:baseline;
+    animation:blink 1.1s steps(1) infinite;
 }
 .hero-title{
     font-family:'Space Grotesk',sans-serif;
@@ -444,6 +470,59 @@ body{
     color:#34d8ac;
     white-space:nowrap;
     min-width:130px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Skills marquee ~~~~~~~~~~~~~~~~~~~~ */
+.skills-marquee{
+    overflow:hidden;
+    margin-top:56px;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.skills-track{
+    display:flex;
+    width:max-content;
+    animation:skillsScroll 35s linear infinite;
+}
+.skills-group{
+    display:flex;
+    gap:56px;
+    padding-right:56px;
+    align-items:center;
+}
+@keyframes skillsScroll{
+    to{transform:translateX(-50%);}
+}
+.skill-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+.skill-item i{
+    font-size:42px;
+    line-height:1;
+}
+.skill-item span:last-child{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:#8b9b95;
+    white-space:nowrap;
+}
+.skill-fa{
+    color:#34d8ac;
+}
+.skill-svg{
+    width:42px;
+    height:42px;
+    display:block;
+}
+.skill-emoji{
+    font-size:38px;
+    line-height:42px;
+}
+.skills-marquee:hover .skills-track{
+    animation-play-state:paused;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~~~~~~ */
@@ -881,6 +960,9 @@ body{
     .reveal{transition:none !important;}
     .reveal-ready .reveal{opacity:1 !important;transform:none !important;}
     .live-dot{animation:none !important;}
+    .skills-track{animation:none !important;}
+    .skills-marquee{overflow-x:auto;}
+    .hero-prompt .typed{animation:none !important;}
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ Responsive ~~~~~~~~~~~~~~~~~~~~ */
