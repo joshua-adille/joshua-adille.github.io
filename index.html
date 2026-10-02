@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/images/Tab Icon.svg" />
     <title>Joshua Adille | Software Engineer, Banking Integration</title>
-    <meta name="description" content="Software engineer in the Philippines building banking and payroll applications for clients across APAC and Europe. Open to remote or Metro Manila roles.">
+    <meta name="description" content="Software engineer in the Philippines with nearly three years in fintech, focused on banking platform integration. Open to remote or Metro Manila roles.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@
         <p class="hero-prompt"><span class="typed">joshua@portfolio:~$ whoami</span><span class="type-caret"></span></p>
         <h1 class="hero-title">Joshua<br>Adille<span class="accent">.</span></h1>
         <p class="hero-location">Software Engineer · Sorsogon City, Philippines · open to remote or Metro Manila</p>
-        <p class="hero-bio">Software engineer building <span class="hl">banking</span> and <span class="hl">payroll</span> applications for clients across APAC and Europe.</p>
+        <p class="hero-bio">Software engineer turning bank requirements into <span class="hl">JavaScript</span> features on a <span class="hl">banking platform's API</span>.</p>
         <div class="hero-cta">
           <a href="#work" class="btn-fill">view my work →</a>
           <a href="images/Joshua_Adille_Resume.pdf" download class="btn-ghost"><i class="fa-solid fa-arrow-down btn-icon"></i>download CV</a>
@@ -82,11 +82,11 @@
         </div>
         <div class="stat">
           <div class="stat-num">8 banks</div>
-          <div class="stat-label">platform clients, APAC &amp; Europe</div>
+          <div class="stat-label">banking platform clients</div>
         </div>
         <div class="stat">
           <div class="stat-num accent">Claude Code</div>
-          <div class="stat-label">daily, for debugging &amp; tests</div>
+          <div class="stat-label">team AI knowledge base</div>
         </div>
       </div>
     </div>
@@ -112,8 +112,8 @@
         </div>
         <div>
           <h2 class="section-title">The short version: I like figuring out how things work.</h2>
-          <p class="about-bio">Software engineer with nearly three years of experience building banking and payroll applications for clients across APAC and Europe.</p>
-          <p class="about-bio">I currently customize a banking platform for <span class="hl">8 bank clients</span>, turning each bank's requirements into <span class="hl">JavaScript</span> features built on the platform's API. Previously, I maintained an <span class="hl">Angular</span> and <span class="hl">Firebase</span> payroll web app, working across Firestore, Authentication, and Cloud Functions. I use <span class="accent">Claude Code</span> daily for debugging, testing, and codebase exploration.</p>
+          <p class="about-bio">Software engineer with nearly three years of experience in fintech, working where business requirements meet code.</p>
+          <p class="about-bio">I customize a vendor's banking platform for <span class="hl">8 of its bank clients</span>, turning each bank's requirements into <span class="hl">JavaScript</span> features built on the platform's API. Previously, I maintained an <span class="hl">Angular</span> and <span class="hl">Firebase</span> payroll web app for a European client, including authenticator-app MFA and Cloud Functions work. I also built a shared <span class="accent">AI knowledge base</span> that gives Claude Code our team's project context.</p>
           <p class="about-bio">Open to software engineering, integration, and implementation roles, remote or in Metro Manila.</p>
 
           <!-- tabs -->
@@ -130,9 +130,10 @@
                   <div class="row-title">Junior Software Engineer</div>
                   <div class="row-desc">International IT Solutions OPC</div>
                   <ul class="row-bullets">
-                    <li>Customized a banking customer-engagement platform for 8 bank clients, building JavaScript modules on its API to meet each bank's business requirements.</li>
-                    <li>Analyzed each bank's requirements to separate what the platform supported natively from what needed custom development, then built the gaps.</li>
-                    <li>Wrote Node.js test suites and scripts to verify platform behavior and speed up troubleshooting.</li>
+                    <li>Customized a vendor's banking customer-engagement platform for 8 of its bank clients, building JavaScript modules and client-specific UI on the platform's API.</li>
+                    <li>Analyzed bank requirements to separate what the platform supported natively from what needed custom development.</li>
+                    <li>Wrote Mocha and Chai test suites in Node.js to verify platform module behavior, covering happy and unhappy paths and regression runs.</li>
+                    <li>Built a shared AI knowledge base for the team, organizing repos, past deliverables, and reusable Claude Code skills so AI agents could load project context and scaffold new platform modules.</li>
                   </ul>
                 </div>
               </div>
@@ -141,10 +142,12 @@
                 <div>
                   <div class="row-title">Junior Software Engineer</div>
                   <div class="row-desc">Pulsar Software Development</div>
+                  <div class="row-note">From January 2025, also worked on the banking platform project ahead of the transfer.</div>
                   <ul class="row-bullets">
                     <li>Maintained and extended an Angular and Firebase payroll web app for a European client, covering profiles, invoicing, and payroll.</li>
                     <li>Regression-tested an incremental upgrade to Angular 16, and fixed a resulting performance regression in UAT using the Angular DevTools profiler and OnPush change detection.</li>
-                    <li>Built an email-change flow with MFA support, tracking pending changes in Firestore until verification.</li>
+                    <li>Built email-change and authenticator-app (TOTP) MFA flows in Firebase Authentication, including re-login prompts and error handling.</li>
+                    <li>Fixed an authentication bug where an admin changing a user's email updated the admin's own login, by moving the change into a Cloud Function that checks the caller's role.</li>
                   </ul>
                 </div>
               </div>
@@ -199,6 +202,9 @@
             <div class="skill-item"><i class="devicon-angular-plain colored"></i><span>Angular</span></div>
             <div class="skill-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
             <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+            <div class="skill-item"><i class="devicon-mocha-plain colored"></i><span>Mocha</span></div>
+            <div class="skill-item"><i class="fa-solid fa-mug-hot skill-fa"></i><span>Chai</span></div>
+            <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
             <div class="skill-item"><i class="fa-solid fa-plug skill-fa"></i><span>REST APIs</span></div>
             <div class="skill-item"><i class="devicon-json-plain colored"></i><span>JSON</span></div>
             <div class="skill-item"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
@@ -215,6 +221,9 @@
             <div class="skill-item"><i class="devicon-angular-plain colored"></i><span>Angular</span></div>
             <div class="skill-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
             <div class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+            <div class="skill-item"><i class="devicon-mocha-plain colored"></i><span>Mocha</span></div>
+            <div class="skill-item"><i class="fa-solid fa-mug-hot skill-fa"></i><span>Chai</span></div>
+            <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
             <div class="skill-item"><i class="fa-solid fa-plug skill-fa"></i><span>REST APIs</span></div>
             <div class="skill-item"><i class="devicon-json-plain colored"></i><span>JSON</span></div>
             <div class="skill-item"><i class="devicon-firebase-plain colored"></i><span>Firebase</span></div>
