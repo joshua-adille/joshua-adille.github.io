@@ -464,6 +464,12 @@ a:focus-visible,button:focus-visible{
     color:#8b9b95;
     margin-top:5px;
 }
+.row-note{
+    font-size:13.5px;
+    font-style:italic;
+    color:#7c8b86;
+    margin-top:4px;
+}
 .row-bullets{
     margin:10px 0 0;
     padding-left:18px;
