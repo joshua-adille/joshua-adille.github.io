@@ -39,3 +39,6 @@ firestore-debug.log
 .claude/
 CLAUDE.md
 CONTEXT.md
+
+# Local notes (not for the live site)
+SEO-GUIDE.md
