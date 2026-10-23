@@ -294,6 +294,7 @@ a:focus-visible,button:focus-visible{
     bottom:0;
     transform:translateX(-50%);
     height:104%;
+    width:auto;
     object-fit:contain;
     filter:drop-shadow(0 20px 40px rgba(0,0,0,0.5));
 }
@@ -416,6 +417,7 @@ a:focus-visible,button:focus-visible{
 }
 .about-img{
     width:100%;
+    height:auto;
     display:block;
     aspect-ratio:4/5;
     object-fit:cover;
@@ -538,6 +540,37 @@ a:focus-visible,button:focus-visible{
 }
 .skills-marquee:hover .skills-track{
     animation-play-state:paused;
+}
+.skills-list{
+    margin-top:48px;
+    border:1px solid #161f1c;
+    border-radius:14px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.012);
+}
+.skills-row{
+    display:grid;
+    grid-template-columns:240px 1fr;
+    gap:24px;
+    padding:16px 28px;
+    align-items:baseline;
+}
+.skills-row:not(:last-child){
+    border-bottom:1px solid #161f1c;
+}
+.skills-cat{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:#34d8ac;
+}
+.skills-vals{
+    font-size:15px;
+    line-height:1.6;
+    color:#d8e2de;
+}
+.skills-note{
+    font-style:italic;
+    color:#7c8b86;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ Work ~~~~~~~~~~~~~~~~~~~~ */
@@ -935,6 +968,11 @@ a:focus-visible,button:focus-visible{
     .row-flex{
         flex-direction:column !important;
         gap:6px !important;
+    }
+    .skills-row{
+        grid-template-columns:1fr !important;
+        gap:4px !important;
+        padding:14px 20px !important;
     }
     .section-pad{
         padding:80px 0 !important;
